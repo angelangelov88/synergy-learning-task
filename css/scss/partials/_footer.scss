@@ -1,17 +1,17 @@
 @use '../abstracts/index' as *;
 
+//Footer is divided in 2 parts (left and right) and that is the main container
 .footer-container {
     display: flex;
     flex-direction: column;
     @media only screen and (min-width: $break-s) {
         flex-direction: row;
-    }
+}
 }
 
 .footer-left-container {
     background-color: $brand-color-pink;
     padding: 50px;
-
 }
 
 .footer-links {
@@ -20,7 +20,8 @@
     flex-direction: column;
     @media only screen and (min-width: $break-m) {
         flex-direction: row;
-    }
+        margin: 20px -13px;
+}
 }
 
 .footer-link {
@@ -28,7 +29,18 @@
     font-weight: 600;
     color: $color-gray;
     padding: 5px 0;
+    @media only screen and (min-width: $break-m) {
+        padding: 10px 15px;
+}
+}
 
+.footer-link:hover {
+    @media only screen and (min-width: $break-m) {
+        color: $brand-color-pink;
+        background-color: $color-gray;
+        border-radius: 10px;
+        padding: 10px 15px;
+}
 }
 
 .footer-text {
@@ -46,20 +58,17 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    // flex-direction: column;
     justify-content: center;
     padding: 50px;    
     @media only screen and (min-width: $break-s) {
         flex-direction: column;
         flex-wrap: nowrap;
-
-    }
+}
     @media only screen and (min-width: $break-xl) {
         flex-direction: row;
         padding: 100px;
-    }
 }
-
+}
 
 .footer-right-container a {
     margin: 20px;

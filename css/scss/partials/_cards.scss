@@ -1,16 +1,13 @@
 @use '../abstracts/index' as *;
 
 .cards-container {
-    // background-image: url('../assets/images/backdrop-left.png');
-    // background-repeat: no-repeat;
     margin-bottom: 20px;
-
     @media only screen and (min-width: $break-m) {
         margin-bottom: 100px;
-    }
-
+}
 }
 
+//This is the styling of the image. I added width and height in order to make the image responsive
 .cards-bg-img {
     display: none;
     position: absolute;
@@ -18,10 +15,9 @@
     width: 100%;
     max-width: 450px;
     height: auto;
-
     @media only screen and (min-width: $break-m) {
         display: block;
-    }
+}
 }
 
 .cards-title {
@@ -33,10 +29,10 @@
     margin-bottom: 50px;
     @media only screen and (min-width: $break-m) {
         font-size: 45px;
-
-    }
+}
 }
 
+//This is the container that wraps the cards only not the title
 .cards-content-container {
     display: flex;
     flex-direction: column;
@@ -45,9 +41,10 @@
     z-index: 10;
     @media only screen and (min-width: $break-l) {
         flex-direction: row;
-    }
+}
 }
 
+//This is each card container
 .card-container {
     width: 60%;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
@@ -57,12 +54,10 @@
     margin: 20px 0;
     @media only screen and (min-width: $break-s) {
         width: 340px;
-
-    }
+}
     @media only screen and (min-width: $break-l) {
         margin: 0 20px;
-
-    }
+}
 }
 
 .card-container img {
@@ -83,8 +78,7 @@
     margin-bottom: 15px;
     @media only screen and (min-width: $break-m) {
         font-size: 35px;
-
-    }
+}
 }
 
 .card-title-purple {
@@ -99,9 +93,7 @@
     font-size: 17px;
     @media only screen and (min-width: $break-m) {
         font-size: 20px;
-
-    }
-
+}
 }
 
 .card-text {
@@ -110,17 +102,16 @@
     color: $color-gray-text;
     @media only screen and (min-width: $break-m) {
         font-size: 17px;
-
-    }
+}
 }
 
+//I added that to add bullet points. Decided to do it that way instead of li elements as I have already added the markup when I realised I had to add bullet points
 .card-text p::before {
     content: "\2022";
     font-weight: bold; 
     display: inline-block; 
     width: 15px;
     margin-left: -18px;
-      
 }
 
 .pink::before{
@@ -147,4 +138,12 @@
 
 .card-btn-pink {
     background-color: $brand-color-pink;
+}
+
+.card-btn-purple:hover {
+    @include btn-hover($brand-color)
+}
+
+.card-btn-pink:hover {
+    @include btn-hover($brand-color-pink)
 }

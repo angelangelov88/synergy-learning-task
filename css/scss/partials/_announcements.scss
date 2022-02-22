@@ -1,12 +1,9 @@
 @use '../abstracts/index' as *;
 
 .announcements-container {
-    border: 1px green solid;
     background-color: $brand-color;
-
     @media only screen and (min-width: $break-m) {
-
-    padding: 0 50px 100px;
+        padding: 0 50px 100px;
 }
 }
 
@@ -14,42 +11,34 @@
     color: white;
     text-align: center;
     font-family: $heading-font;
-    // padding-top: 80px;
     font-size: 25px;
     font-weight: 100;
     @media only screen and (min-width: $break-m) {
         font-size: 45px;
         padding-top: 80px;
-
-
-    }
+}
 }
 
+//This is the second container and I target it to display:flex its children
 .announcements-content-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     @media only screen and (min-width: $break-l) {
         flex-direction: row;
-    }
-
-
+}
 }
 
+// This is the card container
 .announcement-container {
     background-color: white;
     margin: 20px 20px 20px 20px;
     padding: 30px 20px 60px 30px;
     position: relative;
-
     @media only screen and (min-width: $break-l) {
         min-width: 360px;
         max-width: 360px;
-    
-    }
-
-
-
+}
 }
 
 .announcement-date {
@@ -61,8 +50,8 @@
     color: $brand-color;
     @media only screen and (min-width: $break-m) {
         font-size: 30px;
-
-    }    }
+}    
+}
 
 .announcement-text {
     @include text-line-height-and-size;
@@ -74,5 +63,21 @@
     bottom: 0;
     margin: 30px 0;
     font-family: $base-font-bold;
+    padding: 10px 15px;
+}
 
+//This is the hover effect which changes the colour of the card and its text
+.announcement-container:hover{
+    background-color: $brand-color-pink;
+    color: white;
+    .read-more-btn,
+    .read-more-btn::after {    
+        color: white;
+        background-color: $brand-color-pink;
+        padding: 10px 15px;
+        border-radius: 10px;    
+}
+    .announcement-date {
+        color: white;
+}
 }

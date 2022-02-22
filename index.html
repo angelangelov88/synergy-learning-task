@@ -1,44 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- My style sheet compiled to CSS from SASS -->
-  <link rel="stylesheet" href="css/style.css">
+    <!-- My style sheet compiled to CSS from SASS -->
+    <link rel="stylesheet" href="css/style.css">
 
-<!-- Added Font Awesome CDN to show the arrow on the buttons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-
-  <title>ABPI Home Page</title>
+    <title>ABPI Home Page</title>
 </head>
 <body>
-<!-- I have added the container to wrap all the content in order to make sure it stays in the width shown on the image -->
-        <header>
-            <div class="logo-items">
-
-                <div class="logo">
-                    <a href="#">
-                    <img src="./assets/images/logo.png" alt="logo">
-                    </a>
-                </div>
-                <div class="header-items">
-                    <a href="#" class="header-item">FAQS</a>
-                    <a href="#" class="header-item">Case Studies</a>
-                    <a href="#" class="header-item">Terms & Conditions</a>
-                </div>
+    <header>
+        <div class="logo-items">
+            <div class="logo">
+                <a href="#">
+                <img src="./assets/images/logo.png" alt="logo">
+                </a>
             </div>
+            <div class="header-items">
+                <a href="#" class="header-item">FAQS</a>
+                <a href="#" class="header-item">Case Studies</a>
+                <a href="#" class="header-item">Terms & Conditions</a>
+            </div>
+        </div>
+        <a href="#">
+            <div class="login-btn">Login</div>
+        </a>    
+    </header>
+    <main>
+<!-- I have added the container to wrap all the content in order to make sure it stays in the width shown on the image -->
+        <div class="main-container">
 
-            <a href="#">
-                <div class="login-btn">Login</div>
-            </a>    
-        </header>
-        <main>
-            <div class="main-container">
-
+<!-- Hero image part starts here -->
             <div class="hero-image-container">
                 <div class="hero-text-container">
                     <h1 class="hero-title">Welcome to the ABPI Moodle Workplace site</h1>
@@ -51,9 +45,12 @@
                     <img src="./assets/images/web-cover.jpg" alt="web-cover">
                 </div>
             </div>
+
+<!-- Cards part starts here -->
             <div class="cards-container">
                 <img src="./assets/images/backdrop-left.png" alt="fddf" class="cards-bg-img">
                 <div class="cards-title">Discover what's right for you</div>
+<!-- I added extra container to make sure the title is not part of my flex styling -->
                 <div class="cards-content-container">
                     <div class="card-container">
                         <div class="card-image">
@@ -87,14 +84,18 @@
                     </div>
                 </div>
             </div>
+
+<!-- Testimonial part starts here -->
             <div class="review-container">
-                <span class="quotes"></span>
+<!-- I added the quotes as part of the HTML and styled them after that -->
                 <div class="review-text"><span class="quotes-top">&#10075;&#10075;</span>Nice work on the new workplace site. I don't always clop, but when I do, it's because of ABPI. ABPI has completely surpassed our expectations. ABPI is the msot valuable resource I have ever used!<span class="quotes-bottom">&#10076;&#10076;</span></div>
-                <span class="quotes"></span>
                 <div class="review-name">- Annamarie P.</div>
             </div>
+
+<!-- Help-cards part starts here -->
             <div class="help-cards-container">
                 <h1 class="help-cards-title">We are here to help</h1>
+<!-- I added an extra container again to make sure the title is not included when I style this contianer -->
                 <div class="help-cards-content-container">
                     <div class="help-card-container help-card-container-purple">
                         <h3 class="help-card-title help-card-title-purple">Getting started</h3>
@@ -109,11 +110,13 @@
                     <div class="help-card-container help-card-container-purple-light">
                         <div class="after"></div>
                         <h3 class="help-card-title help-card-title-purple-light">How do I access my e-learning</h3>
-                        <p class="help-card-text help-card-text-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        <p class="help-card-text" id="help-card-text-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                         <a href="#" class="view-more-btn">View more</a>
                     </div>
                 </div>
             </div>
+
+<!-- Announcement part starts here -->
             <div class="announcements-container">
                 <h1 class="announcements-title">Site Announcements</h1>
                 <div class="announcements-content-container">
@@ -138,39 +141,35 @@
                 </div>
             </div>
         </div>
-
-        </main>
-        <footer>
-            <div class="footer-container">
-                <div class="footer-left-container">
-                    <div class="footer-links">
-                        <a href="#" class="footer-link">Contact Us</a>
-                        <a href="#" class="footer-link">Privacy & Policies</a>
-                        <a href="#" class="footer-link">About ABPI</a>
-                    </div>
-                    <div class="footer-text">The Association of the British Pharmaceutical Industry is a company limited by guarantee registered in England and Wales (registered number 09826787) and its registered office is at 7th Floor Southside, 105 Victoria Street, London, SW1E6QT.<br>Telephone +44 (0) 207 9303477</div>
-                    <div class="copyright">&copy; ABPI 2020</div>
+    </main>
+    <footer>
+        <div class="footer-container">
+<!-- This is the part with the links and text (left) -->
+            <div class="footer-left-container">
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Contact Us</a>
+                    <a href="#" class="footer-link">Privacy & Policies</a>
+                    <a href="#" class="footer-link">About ABPI</a>
                 </div>
-                <div class="footer-right-container">
-                    <!-- <div class="social-links"> -->
-                        <a href="#" class="youtube">
-                            <img src="./assets/images/youtube-play.png" alt="youtube-logo">
-                        </a>
-                        <a href="#" class="linkedin">
-                            <img src="./assets/images/linkedin.png" alt="linkedin-logo">
-                        </a>
-                        <a href="#" class="twitter">
-                            <img src="./assets/images/twitter.png" alt="twitter-logo">
-                        <!-- </div> -->
-                        </a>
-                </div>
+                <div class="footer-text">The Association of the British Pharmaceutical Industry is a company limited by guarantee registered in England and Wales (registered number 09826787) and its registered office is at 7th Floor Southside, 105 Victoria Street, London, SW1E6QT.<br>Telephone<a href="tel:02079303477"> +44 (0) 207 9303477</a></div>
+                <div class="copyright">&copy; ABPI 2020</div>
             </div>
-        </footer>
+<!-- This is the socials part -->
+            <div class="footer-right-container">
+                    <a href="#" id="youtube">
+                        <img src="./assets/images/youtube-play.png" alt="youtube-logo">
+                    </a>
+                    <a href="#" id="linkedin">
+                        <img src="./assets/images/linkedin.png" alt="linkedin-logo">
+                    </a>
+                    <a href="#" id="twitter">
+                        <img src="./assets/images/twitter.png" alt="twitter-logo">
+                    </a>
+            </div>
+        </div>
+    </footer>
 
 <!-- JavaScript file -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-
-  <script src="assets/JS/main.js"></script>
-
+    <script src="assets/JS/main.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 @use '../abstracts/index' as *;
 
-
+//This is the container. I add the background image only on bigger screens as it does not look appealing on small ones
 .hero-image-container {
     display: flex;
     flex-direction: column;
@@ -10,15 +10,12 @@
     @media only screen and (min-width: $break-m) {
         background-image: url('../assets/images/backdrop-right.png');
         background-position: right;
-        background-repeat: no-repeat;
-    
-    
-    }
+        background-repeat: no-repeat;    
+}
     @media only screen and (min-width: $break-l) {
         flex-direction: row;
         padding: 50px;
-    }
-
+}
 }
 
 .hero-text-container {
@@ -37,38 +34,36 @@
     font-weight: 100;
     @media only screen and (min-width: $break-m) {
         font-size: 45px;
-
-    }
+}
 }
 
 .hero-text {
     @include text-line-height-and-size;
-    // font-size: 20px;
-    // line-height: 30px;
 }
 
 .hero-image {
     margin-top: 50px;
     @media only screen and (min-width: $break-l) {
         margin: 30px;
-    }
+}
 }
 
+//This is the code to make sure the image is responsive and does go over certain width
 .hero-image img {
     width: 100%;
     max-width: 500px;
     height: auto;
     @media only screen and (min-width: $break-l) {
-        min-width: 400px;
-
-    
-    }
+        min-width: 400px;    
+}
 }
 
 
 .primary-btn {
     @include btn($brand-color);
     width: 135px;
-    // font-size: 20px;
+}
 
+.primary-btn:hover {
+    @include btn-hover($brand-color);
 }

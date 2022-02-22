@@ -1,11 +1,6 @@
 @use '../abstracts/index' as *;
 
-.review-container {
-
-    // border: 40px solid transparent;
-    // border-right: 40px solid $brand-color-pink;
-    // border-bottom: 40px solid $brand-color-pink;
-    
+.review-container {    
     padding: 30px;
     max-width: 60%;
     margin-left: auto;
@@ -14,22 +9,17 @@
     position: relative;
     @media only screen and (min-width: $break-s) {
         max-width: 340px;
-    }
+}
     @media only screen and (min-width: $break-m) {
         margin-bottom: 100px;
         padding: 150px;
         max-width: 500px;
-
-        // border: 70px solid transparent;
-        // border-right: 70px solid $brand-color-pink;
-        // border-bottom: 70px solid $brand-color-pink;
-
-    }
+}
 }
 
+//This is the code for the border as seen on the concept image. I have removed it for small screens
 .review-container::after {
     @media only screen and (min-width: $break-m) {
-
         content: " ";
         position: absolute;
         bottom: 0;
@@ -39,15 +29,8 @@
         border-width: 40px;
         border-style: solid;
         border-color: transparent $brand-color-pink $brand-color-pink transparent;
-        // @media only screen and (min-width: $break-m) {
-        //     border-width: 70px;
-        // }
-        }
-    
-
-    
+} 
 }
-
 
 .review-text {
     position: relative;
@@ -55,17 +38,17 @@
     @include text-line-height-and-size;
 }
 
+//This span contains the quotes
 span {
     font-size: 30px;
     color: $brand-color;
     position: absolute;
-
     @media only screen and (min-width: $break-m) {
         font-size: 60px;
-
-    }    
+}    
 }
 
+//Some positioning to make sure the quotes are at the correct place
 .quotes-top {
     left: -25px;
 }
@@ -73,17 +56,12 @@ span {
 .quotes-bottom {
     bottom: 22px;
     right: 0;
-    
 }
-
 
 .review-name {
     color: $brand-color;
     text-align: right;
     @media only screen and (min-width: $break-m) {
         font-size: 25px;
-
-    }    
+}    
 }
-
-  

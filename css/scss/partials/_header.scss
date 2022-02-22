@@ -1,11 +1,8 @@
 @use '../abstracts/index' as *;
 
-
 header {
   display: flex;
-  // flex-direction: column;
   justify-content: space-between;
-  // align-items: center;
   padding: 10px;
   margin-bottom: 50px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -30,7 +27,6 @@ header {
   @media only screen and (min-width: $break-m) {
     flex-direction: row;
 }
-
 }
 
 .header-items {
@@ -46,19 +42,30 @@ header {
   color: $brand-color;
   font-size: 21px;
   font-family: $base-font;
-  padding: 5px 0;
+  padding: 10px 0px;
   @media only screen and (min-width: $break-m) {
-    padding: 0;
-  margin: 40px 20px;
-  }
+    padding: 10px 15px; 
+    margin: 40px 20px;
+}
 }
 
-
+.header-item:hover {
+  @media only screen and (min-width: $break-m) {
+    background-color: $brand-color;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+}
 
 .login-btn {
   @include btn($brand-color);
   width: auto;
   @media only screen and (min-width: $break-s) {
     width: 120px;
-  }
+}
+}
+
+.login-btn:hover {
+  @include btn-hover($brand-color);
 }

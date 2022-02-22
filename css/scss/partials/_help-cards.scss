@@ -1,7 +1,6 @@
 @use '../abstracts/index' as *;
 
 
-
 .help-cards-container {
     margin-bottom: 100px;
 }
@@ -13,11 +12,8 @@
     font-size: 25px;
     @media only screen and (min-width: $break-m) {
         font-size: 45px;
-
-    }
 }
-
-
+}
 
 .help-cards-content-container {
     display: flex;
@@ -27,8 +23,7 @@
     flex-wrap: wrap;
     @media only screen and (min-width: $break-l) {
         flex-direction: row;
-    }
-
+}
 }
 
 .help-card-container {
@@ -42,33 +37,63 @@
         margin: 20px;
         min-width: 360px;
         height: 260px;
-    }
+}
 }
 
+//I have added the border here and styled it to look the same as the concept image
 .help-card-container::after {
-        content: " ";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 83%;
-        width: 95%;
-        border-left: 10px solid;
-        border-bottom: 15px solid;
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 83%;
+    width: 95%;
+    border-left: 10px solid;
+    border-bottom: 15px solid;
 }
 
 .help-card-container-purple::after {
     border-color: transparent transparent $brand-color $brand-color  ;
+}
 
+//This is the hover effect for each card. Had to add them separately as they have different colours on hover
+.help-card-container-purple:hover {
+    background-color: $brand-color;
+    .help-card-text, 
+    .help-card-title, 
+    .view-more-btn , 
+    .view-more-btn::after {
+        color: white;
+}    
 }
 
 .help-card-container-pink::after {
-    border-color: transparent transparent $brand-color-pink $brand-color-pink  ;
+    border-color: transparent transparent $brand-color-pink $brand-color-pink;
+}
 
+.help-card-container-pink:hover {
+    background-color: $brand-color-pink;
+    .help-card-text, 
+    .help-card-title, 
+    .view-more-btn, 
+    .view-more-btn::after {
+        color: white;
+}    
 }
 
 .help-card-container-purple-light::after {
     border-color: transparent transparent $brand-color-purple-light $brand-color-purple-light;
 
+}
+
+.help-card-container-purple-light:hover {
+    background-color: $brand-color-purple-light;
+    .help-card-text, 
+    .help-card-title, 
+    .view-more-btn , 
+    .view-more-btn::after {
+        color: white;
+}    
 }
 
 
@@ -78,11 +103,7 @@
     font-size: 20px;
     @media only screen and (min-width: $break-m) {
         font-size: 25px;
-
-    }
 }
-.help-card-title-black {
-    color: black;
 }
 
 .help-card-title-pink {
@@ -95,16 +116,13 @@
 
 .help-card-text {
     color: rgb(80, 75, 75);
-    // font-size: 14px;
-    // line-height: 23px;
     margin-bottom: 40px;
     @include text-line-height-and-size;
-
 }
 
 
 //I added this extra class to ensure the button looks the same regardless of the text above
-.help-card-text-3 {
+#help-card-text-3 {
     margin-bottom: 18px;
 }
 

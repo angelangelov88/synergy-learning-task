@@ -1,5 +1,4 @@
-
-//Login and Primary buttons
+//Login and Primary buttons styling
 @mixin btn ($brand-color) {
   background-image: url('../assets/images/button-pattern.png');
   background-position: right;
@@ -13,6 +12,12 @@
   font-size: 24px;
 }
 
+//Added this as I used it a few times to hover over some buttons
+@mixin btn-hover($brand-color) {
+  background-color: darken($color: $brand-color, $amount: 10);
+}
+
+//This is a mixin for the buttons view more and read more
 @mixin btn-more ($brand-color-pink) {
   text-transform: uppercase;
   color: $brand-color-pink;
@@ -24,13 +29,11 @@
     color: $brand-color-pink;
     font-weight: bold;
     font-size: 15px;
-  
-  }
-
+}
 }
 
+//I have added this mixin to ensure I have consistency with my font sizes along the page
 @mixin text-line-height-and-size {
-  // font-size: 17px;
   line-height: 30px;
   @media only screen and (min-width: 576px) {
     font-size: 20px;
