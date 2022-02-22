@@ -3,7 +3,7 @@
 .announcements-container {
     border: 1px green solid;
     background-color: $brand-color;
-    
+
     @media only screen and (min-width: $break-m) {
 
     padding: 0 50px 100px;
@@ -15,10 +15,10 @@
     text-align: center;
     font-family: $heading-font;
     // padding-top: 80px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 100;
     @media only screen and (min-width: $break-m) {
-        font-size: 48px;
+        font-size: 45px;
         padding-top: 80px;
 
 

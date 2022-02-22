@@ -99,7 +99,6 @@ header {
 }
 
 .hero-image-container {
-  border: 1px red solid;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -212,14 +211,14 @@ header {
 .cards-title {
   color: #582C77;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 50px;
 }
 @media only screen and (min-width: 768px) {
   .cards-title {
-    font-size: 40px;
+    font-size: 45px;
   }
 }
 
@@ -404,11 +403,11 @@ span {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #582C77;
-  font-size: 20px;
+  font-size: 25px;
 }
 @media only screen and (min-width: 768px) {
   .help-cards-title {
-    font-size: 40px;
+    font-size: 45px;
   }
 }
 
@@ -532,12 +531,12 @@ span {
   color: white;
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 100;
 }
 @media only screen and (min-width: 768px) {
   .announcements-title {
-    font-size: 48px;
+    font-size: 45px;
     padding-top: 80px;
   }
 }
