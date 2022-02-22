@@ -28,7 +28,10 @@
 }
 
 @mixin text-line-height-and-size {
-  font-size: 20px;
+  // font-size: 17px;
   line-height: 30px;
+  @media only screen and (min-width: 576px) {
+    font-size: 20px;
+}
 } 
 

@@ -3,16 +3,26 @@
 .announcements-container {
     border: 1px green solid;
     background-color: $brand-color;
+    
+    @media only screen and (min-width: $break-m) {
+
     padding: 0 50px 100px;
+}
 }
 
 .announcements-title {
     color: white;
     text-align: center;
     font-family: $heading-font;
-    padding-top: 80px;
-    font-size: 48px;
+    // padding-top: 80px;
+    font-size: 20px;
     font-weight: 100;
+    @media only screen and (min-width: $break-m) {
+        font-size: 48px;
+        padding-top: 80px;
+
+
+    }
 }
 
 .announcements-content-container {
@@ -49,12 +59,13 @@
 
 .announcement-title {
     color: $brand-color;
-    font-size: 30px;
-}
+    @media only screen and (min-width: $break-m) {
+        font-size: 30px;
+
+    }    }
 
 .announcement-text {
     @include text-line-height-and-size;
-    // line-height: 27px
 }
 
 .read-more-btn {

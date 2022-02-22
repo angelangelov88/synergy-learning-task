@@ -32,9 +32,7 @@ a {
 
 header {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   padding: 10px;
   margin-bottom: 50px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -102,14 +100,18 @@ header {
 
 .hero-image-container {
   border: 1px red solid;
-  background-image: url("../assets/images/backdrop-right.png");
-  background-position: right;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin-bottom: 100px;
   padding: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-image-container {
+    background-image: url("../assets/images/backdrop-right.png");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
 }
 @media only screen and (min-width: 992px) {
   .hero-image-container {
@@ -122,19 +124,32 @@ header {
   display: flex;
   flex-direction: column;
   max-width: 500px;
-  margin-right: 100px;
+}
+@media only screen and (min-width: 576px) {
+  .hero-text-container {
+    margin-right: 100px;
+  }
 }
 
 .hero-title {
   color: #582C77;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 45px;
+  font-size: 25px;
   font-weight: 100;
+}
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 45px;
+  }
 }
 
 .hero-text {
-  font-size: 20px;
   line-height: 30px;
+}
+@media only screen and (min-width: 576px) {
+  .hero-text {
+    font-size: 20px;
+  }
 }
 
 .hero-image {
@@ -172,24 +187,40 @@ header {
 }
 
 .cards-container {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .cards-container {
+    margin-bottom: 100px;
+  }
 }
 
 .cards-bg-img {
+  display: none;
   position: absolute;
   z-index: 0;
   width: 100%;
   max-width: 450px;
   height: auto;
 }
+@media only screen and (min-width: 768px) {
+  .cards-bg-img {
+    display: block;
+  }
+}
 
 .cards-title {
   color: #582C77;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 50px;
+}
+@media only screen and (min-width: 768px) {
+  .cards-title {
+    font-size: 40px;
+  }
 }
 
 .cards-content-container {
@@ -233,9 +264,14 @@ header {
 
 .card-title {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 35px;
+  font-size: 25px;
   text-align: center;
   margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) {
+  .card-title {
+    font-size: 35px;
+  }
 }
 
 .card-title-purple {
@@ -247,13 +283,23 @@ header {
 }
 
 .card-subtitle {
-  font-size: 20px;
+  font-size: 17px;
+}
+@media only screen and (min-width: 768px) {
+  .card-subtitle {
+    font-size: 20px;
+  }
 }
 
 .card-text {
-  font-size: 17px;
+  font-size: 15px;
   padding-left: 20px;
   color: #6e6d6d;
+}
+@media only screen and (min-width: 768px) {
+  .card-text {
+    font-size: 17px;
+  }
 }
 
 .card-text p::before {
@@ -291,47 +337,54 @@ header {
 }
 
 .review-container {
-  padding: 70px;
+  padding: 30px;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   position: relative;
 }
 @media only screen and (min-width: 768px) {
   .review-container {
+    margin-bottom: 100px;
     padding: 150px;
   }
 }
 
-.review-container::after {
-  content: " ";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 70%;
-  width: 33%;
-  border-width: 40px;
-  border-style: solid;
-  border-color: transparent #E6007E #E6007E transparent;
-}
 @media only screen and (min-width: 768px) {
   .review-container::after {
-    border-width: 70px;
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 70%;
+    width: 33%;
+    border-width: 40px;
+    border-style: solid;
+    border-color: transparent #E6007E #E6007E transparent;
   }
 }
 
 .review-text {
   position: relative;
   padding: 0 30px 30px;
-  font-size: 20px;
   line-height: 30px;
+}
+@media only screen and (min-width: 576px) {
+  .review-text {
+    font-size: 20px;
+  }
 }
 
 span {
-  font-size: 60px;
+  font-size: 30px;
   color: #582C77;
   position: absolute;
+}
+@media only screen and (min-width: 768px) {
+  span {
+    font-size: 60px;
+  }
 }
 
 .quotes-top {
@@ -343,12 +396,6 @@ span {
   right: 0;
 }
 
-.review-name {
-  color: #582C77;
-  font-size: 25px;
-  text-align: right;
-}
-
 .help-cards-container {
   margin-bottom: 100px;
 }
@@ -357,6 +404,12 @@ span {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #582C77;
+  font-size: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .help-cards-title {
+    font-size: 40px;
+  }
 }
 
 .help-cards-content-container {
@@ -384,6 +437,7 @@ span {
   .help-card-container {
     margin: 20px;
     min-width: 360px;
+    height: 260px;
   }
 }
 
@@ -413,6 +467,12 @@ span {
 .help-card-title {
   font-weight: 600;
   font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .help-card-title {
+    font-size: 25px;
+  }
 }
 
 .help-card-title-black {
@@ -430,8 +490,16 @@ span {
 .help-card-text {
   color: #504b4b;
   margin-bottom: 40px;
-  font-size: 20px;
   line-height: 30px;
+}
+@media only screen and (min-width: 576px) {
+  .help-card-text {
+    font-size: 20px;
+  }
+}
+
+.help-card-text-3 {
+  margin-bottom: 18px;
 }
 
 .view-more-btn {
@@ -453,16 +521,25 @@ span {
 .announcements-container {
   border: 1px green solid;
   background-color: #582C77;
-  padding: 0 50px 100px;
+}
+@media only screen and (min-width: 768px) {
+  .announcements-container {
+    padding: 0 50px 100px;
+  }
 }
 
 .announcements-title {
   color: white;
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
-  padding-top: 80px;
-  font-size: 48px;
+  font-size: 20px;
   font-weight: 100;
+}
+@media only screen and (min-width: 768px) {
+  .announcements-title {
+    font-size: 48px;
+    padding-top: 80px;
+  }
 }
 
 .announcements-content-container {
@@ -496,12 +573,20 @@ span {
 
 .announcement-title {
   color: #582C77;
-  font-size: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .announcement-title {
+    font-size: 30px;
+  }
 }
 
 .announcement-text {
-  font-size: 20px;
   line-height: 30px;
+}
+@media only screen and (min-width: 576px) {
+  .announcement-text {
+    font-size: 20px;
+  }
 }
 
 .read-more-btn {

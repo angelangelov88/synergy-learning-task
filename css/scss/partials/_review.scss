@@ -6,14 +6,15 @@
     // border-right: 40px solid $brand-color-pink;
     // border-bottom: 40px solid $brand-color-pink;
     
-    padding: 70px;
+    padding: 30px;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
-position: relative;
+    margin-bottom: 20px;
+    position: relative;
     @media only screen and (min-width: $break-m) {
-    padding: 150px;
+        margin-bottom: 100px;
+        padding: 150px;
         // border: 70px solid transparent;
         // border-right: 70px solid $brand-color-pink;
         // border-bottom: 70px solid $brand-color-pink;
@@ -22,7 +23,8 @@ position: relative;
 }
 
 .review-container::after {
-   
+    @media only screen and (min-width: $break-m) {
+
         content: " ";
         position: absolute;
         bottom: 0;
@@ -32,9 +34,9 @@ position: relative;
         border-width: 40px;
         border-style: solid;
         border-color: transparent $brand-color-pink $brand-color-pink transparent;
-        @media only screen and (min-width: $break-m) {
-            border-width: 70px;
-    
+        // @media only screen and (min-width: $break-m) {
+        //     border-width: 70px;
+        // }
         }
     
 
@@ -49,10 +51,14 @@ position: relative;
 }
 
 span {
-    font-size: 60px;
+    font-size: 30px;
     color: $brand-color;
     position: absolute;
-    
+
+    @media only screen and (min-width: $break-m) {
+        font-size: 60px;
+
+    }    
 }
 
 .quotes-top {
@@ -76,10 +82,10 @@ span {
 //     font-size: 60px;
 // }
 
-.review-name {
-    color: $brand-color;
-    font-size: 25px;
-    text-align: right;
-}
+// .review-name {
+//     color: $brand-color;
+//     font-size: 25px;
+//     text-align: right;
+// }
 
   
