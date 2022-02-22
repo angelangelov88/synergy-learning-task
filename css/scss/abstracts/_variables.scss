@@ -16,3 +16,21 @@ $brand-color-purple-light: #92278F;
 $brand-color-pink: #E6007E;
 $color-gray: rgb(219, 217, 217);
 $color-gray-text: #6e6d6d;
+
+//Fonts
+$heading-font: Georgia, 'Times New Roman', Times, serif;
+// $base-font: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+// Helvetica, Arial, "Lucida Grande", sans-serif;
+
+@font-face {
+    font-family: myHelveticaFont;
+    src: url(../assets/fonts/HelveticaNeueLt.ttf);
+  }
+
+@font-face {
+    font-family: myHelveticaFontBold;
+    src: url(../assets/fonts/HelveticaNeueBd.ttf);
+  }
+
+$base-font: myHelveticaFont, Helvetica, Arial, "Lucida Grande", sans-serif;
+$base-font-bold: myHelveticaFontBold, Helvetica, Arial, "Lucida Grande", sans-serif;

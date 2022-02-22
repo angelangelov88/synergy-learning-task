@@ -27,8 +27,14 @@
 
 .hero-title {
     color: $brand-color; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
+    font-family: $heading-font;
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.hero-text {
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .hero-image {
@@ -52,5 +58,7 @@
 
 .primary-btn {
     @include btn($brand-color);
-    font-size: 20px;
+    width: 135px;
+    // font-size: 20px;
+
 }

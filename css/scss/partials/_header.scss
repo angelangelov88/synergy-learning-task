@@ -44,7 +44,8 @@ header {
 
 .header-item {
   color: $brand-color;
-  font-size: 18px;
+  font-size: 21px;
+  font-family: $base-font;
   @media only screen and (min-width: $break-m) {
 
   margin: 40px 20px;

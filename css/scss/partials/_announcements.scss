@@ -9,7 +9,7 @@
 .announcements-title {
     color: white;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: $heading-font;
     padding-top: 80px;
     font-size: 48px;
     font-weight: 100;
@@ -33,8 +33,8 @@
     position: relative;
 
     @media only screen and (min-width: $break-l) {
-        min-width: 350px;
-        max-width: 350px;
+        min-width: 360px;
+        max-width: 360px;
     
     }
 
@@ -49,13 +49,12 @@
 
 .announcement-title {
     color: $brand-color;
-    font-size: 25px;
-    font-weight: 100;
+    font-size: 30px;
 }
 
 .announcement-text {
-
-    line-height: 27px
+    @include text-line-height-and-size;
+    // line-height: 27px
 }
 
 .read-more-btn {
@@ -63,4 +62,6 @@
     position: absolute;
     bottom: 0;
     margin: 30px 0;
+    font-family: $base-font-bold;
+
 }

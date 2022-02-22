@@ -2,12 +2,11 @@
 
 
 body {
-  font-family: Helvetica Neue, Verdana, Georgia, 'Times New Roman', Times, serif;
+  font-family: $base-font;
   font-size: 17px;
   margin-bottom: 50px;
   color: #0a3126;
   margin: 0;
-
 }
 
 a {

@@ -45,8 +45,7 @@ position: relative;
 .review-text {
     position: relative;
     padding: 0 30px 30px;
-    font-size: 16px;
-    line-height: 27px;
+    @include text-line-height-and-size;
 }
 
 span {
