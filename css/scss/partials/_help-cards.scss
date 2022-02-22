@@ -1,7 +1,6 @@
 @use '../abstracts/index' as *;
 
 .help-cards-container {
-    border: 1px red solid;
     margin-bottom: 100px;
 }
 
@@ -27,14 +26,15 @@
 
 .help-card-container {
     box-shadow: rgba(0, 0, 0, 0.15) 6px 0px 23px 1px;
-    padding: 20px 20px 20px 50px;
+    padding: 20px 20px 50px 50px;
     position: relative;
-    min-width: 300px;
-    max-width: 300px;
+    max-width: 360px;
     margin: 20px;
-    height: 200px;
+    height: auto;
     @media only screen and (min-width: $break-l) {
         margin: 20px;
+        min-width: 360px;
+
     }
 }
 
@@ -82,11 +82,13 @@
 
 .help-card-text {
     color: rgb(80, 75, 75);
-    font-size: 14px;
+    // font-size: 14px;
     line-height: 23px;
-    // margin-bottom: 30px;
+    margin-bottom: 40px;
+
 }
 
 .view-more-btn {
     @include btn-more($brand-color-pink);
+    padding-bottom: 100px;
 }

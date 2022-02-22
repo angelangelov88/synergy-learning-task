@@ -2,12 +2,15 @@
 
 .footer-container {
     display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: $break-s) {
+        flex-direction: row;
+    }
 }
 
 .footer-left-container {
     background-color: $brand-color-pink;
     padding: 50px;
-    flex-basis: 70%;
 
 }
 
@@ -37,12 +40,18 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    @media only screen and (min-width: $break-l) {
+    padding: 50px;    
+    @media only screen and (min-width: $break-s) {
+        
+    }
+    @media only screen and (min-width: $break-xl) {
         flex-direction: row;
+        padding: 100px;
     }
 }
 
-.footer-right-container div {
+
+.footer-right-container a {
     margin: 20px;
 }
 

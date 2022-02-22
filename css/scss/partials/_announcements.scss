@@ -3,7 +3,7 @@
 .announcements-container {
     border: 1px green solid;
     background-color: $brand-color;
-    padding-bottom: 100px;
+    padding: 0 50px 100px;
 }
 
 .announcements-title {
@@ -30,9 +30,16 @@
     background-color: white;
     margin: 20px 20px 20px 20px;
     padding: 30px 20px 60px 30px;
-    min-width: 350px;
-    max-width: 350px;
     position: relative;
+
+    @media only screen and (min-width: $break-l) {
+        min-width: 350px;
+        max-width: 350px;
+    
+    }
+
+
+
 }
 
 .announcement-date {
