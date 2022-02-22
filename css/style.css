@@ -1,0 +1,111 @@
+body {
+  font-family: Helvetica Neue, Verdana, Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 50px;
+  color: #0a3126;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-container {
+  max-width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .main-container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+@media only screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.logo-items {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .logo-items {
+    flex-direction: row;
+  }
+}
+
+.header-items {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .header-items {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.header-item {
+  color: #582C77;
+  font-size: 17px;
+}
+@media only screen and (min-width: 768px) {
+  .header-item {
+    margin: 40px 20px;
+  }
+}
+
+.login-btn {
+  background-image: url("../assets/images/button-pattern.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #582C77;
+  color: white;
+  width: 120px;
+  height: 33px;
+  padding: 15px 20px;
+  font-size: 24px;
+}
+
+.hero-image-container {
+  border: 1px red solid;
+  background-image: url("../assets/images/backdrop-right.png");
+}
+
+.hero-title {
+  color: #582C77;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.primary-btn {
+  background-image: url("../assets/images/button-pattern.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #582C77;
+  color: white;
+  width: 120px;
+  height: 33px;
+  padding: 15px 20px;
+  font-size: 24px;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */

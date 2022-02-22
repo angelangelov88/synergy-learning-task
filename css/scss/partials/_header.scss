@@ -1,0 +1,56 @@
+@use '../abstracts/index' as *;
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // align-items: left;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  @media only screen and (min-width: $break-m) {
+    flex-direction: row;
+    align-items: center;
+}
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.logo-items {
+  display: flex;
+  flex-direction: column;
+  @media only screen and (min-width: $break-m) {
+    flex-direction: row;
+}
+
+}
+
+.header-items {
+  display: flex;
+  flex-direction: column;
+  @media only screen and (min-width: $break-m) {
+    flex-direction: row;
+    align-items: center;
+}
+}
+
+.header-item {
+  color: $brand-color;
+  font-size: 17px;
+  @media only screen and (min-width: $break-m) {
+
+  margin: 40px 20px;
+  }
+}
+
+
+
+.login-btn {
+  @include btn($brand-color);
+}
