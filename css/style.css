@@ -78,9 +78,11 @@ header {
   color: #582C77;
   font-size: 21px;
   font-family: myHelveticaFont, Helvetica, Arial, "Lucida Grande", sans-serif;
+  padding: 5px 0;
 }
 @media only screen and (min-width: 768px) {
   .header-item {
+    padding: 0;
     margin: 40px 20px;
   }
 }
@@ -96,6 +98,12 @@ header {
   height: 33px;
   padding: 15px 20px;
   font-size: 24px;
+  width: auto;
+}
+@media only screen and (min-width: 576px) {
+  .login-btn {
+    width: 120px;
+  }
 }
 
 .hero-image-container {
@@ -243,10 +251,14 @@ header {
   padding: 40px 20px 20px;
   margin: 20px 0;
 }
+@media only screen and (min-width: 576px) {
+  .card-container {
+    width: 340px;
+  }
+}
 @media only screen and (min-width: 992px) {
   .card-container {
     margin: 0 20px;
-    width: 340px;
   }
 }
 
@@ -337,16 +349,22 @@ header {
 
 .review-container {
   padding: 30px;
-  max-width: 500px;
+  max-width: 60%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
   position: relative;
 }
+@media only screen and (min-width: 576px) {
+  .review-container {
+    max-width: 340px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .review-container {
     margin-bottom: 100px;
     padding: 150px;
+    max-width: 500px;
   }
 }
 
@@ -393,6 +411,16 @@ span {
 .quotes-bottom {
   bottom: 22px;
   right: 0;
+}
+
+.review-name {
+  color: #582C77;
+  text-align: right;
+}
+@media only screen and (min-width: 768px) {
+  .review-name {
+    font-size: 25px;
+  }
 }
 
 .help-cards-container {
@@ -508,6 +536,7 @@ span {
   font-size: 12px;
   padding-bottom: 100px;
   font-family: myHelveticaFontBold, Helvetica, Arial, "Lucida Grande", sans-serif;
+  z-index: 100;
 }
 .view-more-btn::after {
   content: " ➜";
@@ -623,12 +652,20 @@ span {
 
 .footer-links {
   margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .footer-links {
+    flex-direction: row;
+  }
 }
 
 .footer-link {
   margin: 0 30px 0 0;
   font-weight: 600;
   color: #dbd9d9;
+  padding: 5px 0;
 }
 
 .footer-text {
@@ -644,9 +681,15 @@ span {
   background-color: white;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 50px;
+}
+@media only screen and (min-width: 576px) {
+  .footer-right-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 @media only screen and (min-width: 1260px) {
   .footer-right-container {
@@ -657,8 +700,4 @@ span {
 
 .footer-right-container a {
   margin: 20px;
-}
-
-.social-links {
-  border: 1px blue solid;
 }/*# sourceMappingURL=style.css.map */

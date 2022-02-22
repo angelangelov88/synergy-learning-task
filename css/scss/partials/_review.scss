@@ -7,14 +7,19 @@
     // border-bottom: 40px solid $brand-color-pink;
     
     padding: 30px;
-    max-width: 500px;
+    max-width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
     position: relative;
+    @media only screen and (min-width: $break-s) {
+        max-width: 340px;
+    }
     @media only screen and (min-width: $break-m) {
         margin-bottom: 100px;
         padding: 150px;
+        max-width: 500px;
+
         // border: 70px solid transparent;
         // border-right: 70px solid $brand-color-pink;
         // border-bottom: 70px solid $brand-color-pink;
@@ -71,21 +76,14 @@ span {
     
 }
 
-// .review-text::before {
-//     content: "\275C \275C";
-//     font-size: 60px;
 
-// }
+.review-name {
+    color: $brand-color;
+    text-align: right;
+    @media only screen and (min-width: $break-m) {
+        font-size: 25px;
 
-// .review-text::after {
-//     content: "\275C \275C";
-//     font-size: 60px;
-// }
-
-// .review-name {
-//     color: $brand-color;
-//     font-size: 25px;
-//     text-align: right;
-// }
+    }    
+}
 
   

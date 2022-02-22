@@ -55,9 +55,12 @@
     background-color: white;
     padding: 40px 20px 20px;
     margin: 20px 0;
+    @media only screen and (min-width: $break-s) {
+        width: 340px;
+
+    }
     @media only screen and (min-width: $break-l) {
         margin: 0 20px;
-        width: 340px;
 
     }
 }
