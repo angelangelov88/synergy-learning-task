@@ -1,0 +1,59 @@
+@use '../abstracts/index' as *;
+
+.announcements-container {
+    border: 1px green solid;
+    background-color: $brand-color;
+    padding-bottom: 100px;
+}
+
+.announcements-title {
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 80px;
+    font-size: 48px;
+    font-weight: 100;
+}
+
+.announcements-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media only screen and (min-width: $break-l) {
+        flex-direction: row;
+    }
+
+
+}
+
+.announcement-container {
+    background-color: white;
+    margin: 20px 20px 20px 20px;
+    padding: 30px 20px 60px 30px;
+    min-width: 350px;
+    max-width: 350px;
+    position: relative;
+}
+
+.announcement-date {
+    color: $brand-color-pink;
+    font-weight: 600;
+}
+
+.announcement-title {
+    color: $brand-color;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.announcement-text {
+
+    line-height: 27px
+}
+
+.read-more-btn {
+    @include btn-more ($brand-color-pink);
+    position: absolute;
+    bottom: 0;
+    margin: 30px 0;
+}

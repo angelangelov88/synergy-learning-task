@@ -1,0 +1,92 @@
+@use '../abstracts/index' as *;
+
+.help-cards-container {
+    border: 1px red solid;
+    margin-bottom: 100px;
+}
+
+.help-cards-title {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: $brand-color;
+}
+
+
+
+.help-cards-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    @media only screen and (min-width: $break-l) {
+        flex-direction: row;
+    }
+
+}
+
+.help-card-container {
+    box-shadow: rgba(0, 0, 0, 0.15) 6px 0px 23px 1px;
+    padding: 20px 20px 20px 50px;
+    position: relative;
+    min-width: 300px;
+    max-width: 300px;
+    margin: 20px;
+    height: 200px;
+    @media only screen and (min-width: $break-l) {
+        margin: 20px;
+    }
+}
+
+.help-card-container::after {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 83%;
+        width: 95%;
+        border-left: 10px solid;
+        border-bottom: 15px solid;
+}
+
+.help-card-container-purple::after {
+    border-color: transparent transparent $brand-color $brand-color  ;
+
+}
+
+.help-card-container-pink::after {
+    border-color: transparent transparent $brand-color-pink $brand-color-pink  ;
+
+}
+
+.help-card-container-purple-light::after {
+    border-color: transparent transparent $brand-color-purple-light $brand-color-purple-light;
+
+}
+
+
+.help-card-title {
+    font-weight: 300;
+}
+.help-card-title-black {
+    color: black;
+}
+
+.help-card-title-pink {
+    color: $brand-color-pink;
+}
+
+.help-card-title-purple {
+    color: $brand-color;
+}
+
+.help-card-text {
+    color: rgb(80, 75, 75);
+    font-size: 14px;
+    line-height: 23px;
+    // margin-bottom: 30px;
+}
+
+.view-more-btn {
+    @include btn-more($brand-color-pink);
+}

@@ -1,0 +1,86 @@
+@use '../abstracts/index' as *;
+
+.review-container {
+
+    // border: 40px solid transparent;
+    // border-right: 40px solid $brand-color-pink;
+    // border-bottom: 40px solid $brand-color-pink;
+    
+    padding: 70px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+position: relative;
+    @media only screen and (min-width: $break-m) {
+    padding: 150px;
+        // border: 70px solid transparent;
+        // border-right: 70px solid $brand-color-pink;
+        // border-bottom: 70px solid $brand-color-pink;
+
+    }
+}
+
+.review-container::after {
+   
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 70%;
+        width: 33%;
+        border-width: 40px;
+        border-style: solid;
+        border-color: transparent $brand-color-pink $brand-color-pink transparent;
+        @media only screen and (min-width: $break-m) {
+            border-width: 70px;
+    
+        }
+    
+
+    
+}
+
+
+.review-text {
+    position: relative;
+    padding: 0 30px 30px;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+span {
+    font-size: 60px;
+    color: $brand-color;
+    position: absolute;
+    
+}
+
+.quotes-top {
+    left: -25px;
+}
+
+.quotes-bottom {
+    bottom: 22px;
+    right: 0;
+    
+}
+
+// .review-text::before {
+//     content: "\275C \275C";
+//     font-size: 60px;
+
+// }
+
+// .review-text::after {
+//     content: "\275C \275C";
+//     font-size: 60px;
+// }
+
+.review-name {
+    color: $brand-color;
+    font-size: 25px;
+    text-align: right;
+}
+
+  

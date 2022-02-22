@@ -6,6 +6,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   // align-items: left;
+  margin-bottom: 50px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   @media only screen and (min-width: $break-m) {
     flex-direction: row;

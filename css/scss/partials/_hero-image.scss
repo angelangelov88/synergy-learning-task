@@ -4,6 +4,23 @@
 .hero-image-container {
     border: 1px red solid;
     background-image: url('../assets/images/backdrop-right.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    @media only screen and (min-width: $break-l) {
+        flex-direction: row;
+    }
+
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-right: 100px;
 }
 
 .hero-title {
@@ -11,7 +28,12 @@
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-
+.hero-image {
+    margin-top: 50px;
+    @media only screen and (min-width: $break-l) {
+        margin: 30px;
+    }
+}
 
 
 .primary-btn {

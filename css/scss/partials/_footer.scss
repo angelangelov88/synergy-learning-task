@@ -1,0 +1,52 @@
+@use '../abstracts/index' as *;
+
+.footer-container {
+    display: flex;
+}
+
+.footer-left-container {
+    background-color: $brand-color-pink;
+    padding: 50px;
+    flex-basis: 70%;
+
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-link {
+    margin: 0 30px 0 0;
+    font-weight: 600;
+    color: $color-gray;
+}
+
+.footer-text {
+    color: $color-gray;
+}
+
+.copyright {
+    margin-top: 30px;
+    color: $color-gray;
+}
+
+
+.footer-right-container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    @media only screen and (min-width: $break-l) {
+        flex-direction: row;
+    }
+}
+
+.footer-right-container div {
+    margin: 20px;
+}
+
+.social-links {
+    // display: flex;
+    border: 1px blue solid;
+}

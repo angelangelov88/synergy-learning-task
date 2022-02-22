@@ -1,3 +1,115 @@
 @use '../abstracts/index' as *;
 
+.cards-container {
+    // background-image: url('../assets/images/backdrop-left.png');
+    // background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
 
+.cards-bg-img {
+    position: absolute;
+    z-index: 0;
+}
+
+.cards-title {
+    color: $brand-color;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cards-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    @media only screen and (min-width: $break-l) {
+        flex-direction: row;
+    }
+}
+
+.card-container {
+    width: 340px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    z-index: 1;
+    background-color: white;
+    padding: 40px 20px 20px;
+    margin: 20px 0;
+    @media only screen and (min-width: $break-l) {
+        margin: 0 20px;
+
+    }
+}
+
+.card-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-title-purple {
+    color: $brand-color;
+}
+
+.card-title-pink {
+    color: $brand-color-pink;
+}
+
+.card-subtitle {
+    font-size: 18px;
+}
+
+.card-text {
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.card-text p::before {
+    content: "\2022";
+    font-weight: bold; 
+    display: inline-block; 
+    width: 15px;
+    margin-left: -18px;
+      
+}
+
+.pink::before{
+    color: $brand-color-pink;
+}
+
+.purple::before {
+    color: $brand-color;
+}
+
+.card-btn {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 30px -20px -20px;
+}
+
+.card-btn-purple {
+    background-color: $brand-color;
+}
+
+.card-btn-pink {
+    background-color: $brand-color-pink;
+}
